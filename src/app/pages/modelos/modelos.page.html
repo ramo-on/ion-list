@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="'primary">
+    <ion-title>Mercados da região</ion-title>
+  </ion-toolbar>
+</ion-header>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+
+
+<ion-content [fullscreen]="true">
+  <div id="leafletMap"></div>
+  <ion-button (click)="loadLeafletMap()">Aqui</ion-button>
+  <div class="map-frame">
+    <ion-fab bottom id="menuButtons" style="display: flex; justify-content: space-around;">
+      <ion-row text-center>
+        <ion-col>
+          <ion-fab-button (click)="searchPOIs('supermarket')">
+            <i class="fas fa-shopping-cart"></i>
+          </ion-fab-button>
+        </ion-col>
+        <ion-col>
+          <ion-fab-button (click)="searchPOIs('pharmacy')">
+            <i class="fas fa-prescription-bottle-alt"></i>
+          </ion-fab-button>
+        </ion-col>
+        <ion-col>
+          <ion-fab-button (click)="searchPOIs('clothes')" >
+            <i class="fas fa-tshirt"></i> 
+          </ion-fab-button>
+        </ion-col>
+      </ion-row>
+    </ion-fab>
+  </div>
+
+</ion-content>

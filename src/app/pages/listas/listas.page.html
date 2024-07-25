@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="'primary">
+      <ion-title>Lista de lista</ion-title>
+      <ion-button color='dark' (click)="nextpage()" slot="end">
+        <ion-icon   name="add-circle-outline"></ion-icon></ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <!-- <ion-header> -->
+    <!-- <ion-toolbar>
+      <ion-title>Listas</ion-title>
+    </ion-toolbar> -->
+    <div class="header-function">
+      <ion-searchbar animated="true" placeholder="Procurar"></ion-searchbar>
+    
+      </div>
+  <!-- </ion-header> -->
+  <ion-item *ngFor="let list of data; let i=index">
+    <ion-accordion-group>
+      <ion-accordion>
+        <ion-item slot="header" color="light">
+          <ion-label>{{list.title}}</ion-label>
+        </ion-item>
+
+        <div class="ion-padding" slot="content">
+          <ion-item *ngFor="let value of list.items; let i=index">
+            <span>Nome: {{ value.name}} | Qtd: {{value.qtd}} | R$ {{value.money}}</span><br>
+          </ion-item>
+        </div>
+      </ion-accordion>
+    </ion-accordion-group>
+  </ion-item>
+</ion-content>

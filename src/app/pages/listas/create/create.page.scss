@@ -1,0 +1,42 @@
+ion-row {
+    ion-col.money {
+        text-align: left;
+    }
+
+}
+
+;
+
+ion-checkbox {
+    display: none;
+    align-items: start;
+    flex-wrap: nowrap;
+}
+
+
+
+
+ion-input.item {
+    height: 50px;
+    font-size: 12px;
+    display: flex;
+    width: 720px;
+    --gap: 100px;
+
+}
+
+ion-input.money {
+    display: flex;
+    width: 150px;
+
+}
+
+ion-input.qtd {
+    width: 150px;
+}
+
+ion-icon {
+    height: 100px;
+    width: 100px;
+}
+

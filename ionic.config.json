@@ -1,0 +1,8 @@
+{
+  "name": "Mercado",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

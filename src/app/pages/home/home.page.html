@@ -1,0 +1,50 @@
+<!-- <ion-header collapse="collapse" class="ion-no-border">
+    <ion-toolbar color='primary'>
+      <ion-title size="large">Lista do mês</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+<ion-header [translucent]="true">
+    <ion-toolbar color="'primary">
+        <ion-title>Lista do mês</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+
+
+
+    <!-- <ion-item *ngFor="let item of data; let i=index"> -->
+
+        <!-- <ion-checkbox ng-show="newTrustFormVisible" slot="start" checked="{{item['check'].value}}">
+        </ion-checkbox>
+        <ion-input type="text" label="Item" labelPlacement="floating" class="form-control item" id="name"
+            value="{{item['name']}}"></ion-input>
+        <ion-input type="number" label="Qtd" labelPlacement="floating" class="form-control qtd"
+            value="{{item['qtd']}}"></ion-input>
+        <ion-input type="number" label="R$" labelPlacement="floating" class="form-control money" placeholder="R$"
+            value="{{item['money']}}"></ion-input>
+ -->
+
+                <!-- <ion-select aria-label="fruit" placeholder="Select fruit">
+                    <ion-select-option value="i">{{item.title}}</ion-select-option>
+                </ion-select>
+      -->
+
+      <ion-list>
+        <ion-item >
+          <ion-select   (ionChange)="handleChange($event)" aria-label="fruit" placeholder="Selecione a Lista do mês">
+            <ion-select-option  *ngFor="let item of data; let i=index" value="{{item.title}}">{{item.title}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+    <!-- </ion-item> -->
+
+
+
+    <!-- <ion-button (click)="getFormStorage()">
+        Buscar Itens
+    </ion-button> -->
+
+
+</ion-content>
