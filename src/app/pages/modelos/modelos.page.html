@@ -9,26 +9,5 @@
 <ion-content [fullscreen]="true">
   <div id="leafletMap"></div>
   <ion-button (click)="loadLeafletMap()">Aqui</ion-button>
-  <div class="map-frame">
-    <ion-fab bottom id="menuButtons" style="display: flex; justify-content: space-around;">
-      <ion-row text-center>
-        <ion-col>
-          <ion-fab-button (click)="searchPOIs('supermarket')">
-            <i class="fas fa-shopping-cart"></i>
-          </ion-fab-button>
-        </ion-col>
-        <ion-col>
-          <ion-fab-button (click)="searchPOIs('pharmacy')">
-            <i class="fas fa-prescription-bottle-alt"></i>
-          </ion-fab-button>
-        </ion-col>
-        <ion-col>
-          <ion-fab-button (click)="searchPOIs('clothes')" >
-            <i class="fas fa-tshirt"></i> 
-          </ion-fab-button>
-        </ion-col>
-      </ion-row>
-    </ion-fab>
-  </div>
 
 </ion-content>

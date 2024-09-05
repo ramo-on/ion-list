@@ -1,42 +1,75 @@
-ion-row{
-    ion-col.money{
-     text-align:left;
+ion-row {
+    ion-col.money {
+        text-align: left;
     }
-         // background: red;
-     
- };
- 
- ion-checkbox {
-     display: flex;
-     align-items: start;
-     flex-wrap: nowrap;
- }
- 
- ion-item {
-    
-    
- 
-     ion-input.item{
-         display: flex;
-         width: 720px;
-         --gap: 100px;
-        
-     }
- 
-     ion-input.money {
-         display: flex;
-         width: 150px;   
-         
-     }
-     ion-input.qtd {
-         width: 150px;
-     }
-      
-     ion-icon{
-         height: 100px;
-         width: 100px;
-     }
- 
- }
- 
- 
+
+    // background: red;
+
+}
+
+;
+
+ion-checkbox {
+    display: flex;
+    align-items: start;
+    flex-wrap: nowrap;
+}
+
+ion-item {
+
+
+
+    ion-input.item {
+        display: flex;
+        width: 720px;
+        --gap: 100px;
+
+    }
+
+    ion-input.money {
+        display: flex;
+        width: 150px;
+
+    }
+
+    ion-input.qtd {
+        width: 150px;
+    }
+
+    ion-icon {
+        height: 100px;
+        width: 100px;
+    }
+
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.input-disabled.sc-ion-input-ios-h {
+    opacity: 1 !important;
+}
+
+.total-calculate {
+    display: flex;
+    background-color: white;
+    height: 25%;
+    justify-content: center;
+
+    i {
+        display: flex;
+        align-items: center;
+        font-size: 50px;
+        justify-content: center;
+    }
+
+    .count {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+
+    }
+}
